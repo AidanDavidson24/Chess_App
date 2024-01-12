@@ -28,6 +28,8 @@ public class Chessman : MonoBehaviour
         //Take the instantiated location and adjust transform
         SetCoords();
 
+        if (GetComponent<SpriteRenderer>() == null)
+            return;
         //Choose correct sprite based on piece's name
         switch (this.name)
         {
